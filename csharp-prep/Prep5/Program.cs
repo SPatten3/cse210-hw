@@ -13,9 +13,17 @@ class Program
         string name = Console.ReadLine();
         return name;
     }
+
+    static int PromptUserNumber()
+    {
+        Console.Write("Enter your favorite number:  ");
+        int favNumber = int.Parse(Console.ReadLine());
+        return favNumber;
+    }
     static void Main(string[] args)
     {
         DisplayWelcome();
         string name = PromptUserName();
+        int favNumber = PromptUserNumber();
     }
 }
