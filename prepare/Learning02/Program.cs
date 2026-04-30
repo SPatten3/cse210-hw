@@ -10,8 +10,19 @@ class Program
         job1._jobTitle = "Academic Skills Coach";
         job1._startYear = 2024;
         job1._endYear = 2027;
+        Job job2 = new Job();
+        job2._company = "BYU-Idaho";
+        job2._jobTitle = "Teaching Assistant";
+        job2._startYear = 2025;
+        job2._endYear = 2026;
 
-        job1.Display();
+        Resume myResume = new Resume();
+        myResume._name = "Spencer Patten";
+        myResume._jobs.Add(job1);
+        myResume._jobs.Add(job2);
+
+        myResume.Display();
+
 
     }
 }
