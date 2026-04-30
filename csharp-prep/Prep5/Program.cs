@@ -20,10 +20,18 @@ class Program
         int favNumber = int.Parse(Console.ReadLine());
         return favNumber;
     }
+
+    static int PromptUserBirthYear()
+    {
+        Console.Write("Enter the year you were born:  ");
+        int birthYear = int.Parse(Console.ReadLine());
+        return birthYear;
+    }
     static void Main(string[] args)
     {
         DisplayWelcome();
         string name = PromptUserName();
         int favNumber = PromptUserNumber();
+        int birthYear = PromptUserBirthYear();
     }
 }
